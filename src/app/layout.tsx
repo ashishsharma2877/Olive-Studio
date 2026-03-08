@@ -14,8 +14,11 @@ export const metadata: Metadata = {
   description:
     "Turn fan behavior into revenue decisions — across monetization, marketing, product, and engagement. Built by live ops veterans who've done this at scale.",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/images/logo-icon.png",
+    icon: [
+      { url: "/icon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/icon-32.png",
   },
   keywords: [
     "fan intelligence",
