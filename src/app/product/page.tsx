@@ -192,9 +192,9 @@ export default function ProductPage() {
       <section className="py-8 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <span className="inline-flex items-center px-6 py-3 rounded-full bg-[#14141A] border border-white/10 text-sm text-gray-400">
-              <span className="mr-2">Then the cycle begins</span>
-              <span className="text-[#00D4FF]">↻</span>
+            <span className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-sm font-semibold text-[#0A0A0F]">
+              <span className="mr-2">Insights from day one — and it only gets smarter</span>
+              <span>↻</span>
             </span>
           </div>
         </div>
