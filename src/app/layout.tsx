@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   title: "FanCortex | Fan Intelligence for Live Games",
   description:
     "Turn fan behavior into revenue decisions — across monetization, marketing, product, and engagement. Built by live ops veterans who've done this at scale.",
+  icons: {
+    icon: "/images/logo-icon.png",
+    apple: "/images/logo-icon.png",
+  },
   keywords: [
     "fan intelligence",
     "live games",
