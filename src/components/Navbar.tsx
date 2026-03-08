@@ -22,10 +22,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-xl md:text-2xl font-bold">
-              <span className="text-white">Fan</span>
-              <span className="bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] bg-clip-text text-transparent">Cortex</span>
-            </span>
+            <Image
+              src="/images/logo-full.png"
+              alt="FanCortex"
+              width={160}
+              height={40}
+              className="w-32 md:w-40"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
