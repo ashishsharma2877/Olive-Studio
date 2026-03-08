@@ -353,7 +353,7 @@ export function AppStudioMockup() {
               <div className="text-center px-4">
                 <Sparkles className="w-6 h-6 text-[#FFB800]/30 mx-auto mb-2" />
                 <p className="text-gray-500 text-[10px] mb-0.5">Describe what you want to know</p>
-                <p className="text-gray-600 text-[9px]">FanCortex builds what you need — and more</p>
+                <p className="text-gray-600 text-[9px]">FanMint builds what you need — and more</p>
               </div>
             </motion.div>
           )}

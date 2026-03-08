@@ -55,7 +55,7 @@ export default function AboutPage() {
               <span className="gradient-text">Trenches</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-              FanCortex was built by live ops and monetization leaders who spent
+              FanMint was built by live ops and monetization leaders who spent
               decades at Electronic Arts. We got tired of flying blind — so we
               built the system we always wished we had.
             </p>
@@ -90,13 +90,13 @@ export default function AboutPage() {
                   millions on the table.
                 </p>
                 <p>
-                  We built FanCortex to fix that. Not another dashboard. Not
+                  We built FanMint to fix that. Not another dashboard. Not
                   another alert system. A real intelligence layer that tells you
                   what&apos;s happening, why, and what to do next.
                 </p>
                 <p className="text-white font-medium">
                   We call them fans because they&apos;re not just users — they
-                  spend, they churn, they advocate, they rage-quit. FanCortex
+                  spend, they churn, they advocate, they rage-quit. FanMint
                   turns that behavior into revenue decisions.
                 </p>
               </div>

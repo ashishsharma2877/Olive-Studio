@@ -22,7 +22,7 @@ export default function Footer() {
             <Link href="/" className="inline-block">
               <Image
                 src="/images/logo-full.png"
-                alt="FanCortex"
+                alt="FanMint"
                 width={160}
                 height={36}
                 className="h-8 w-auto"
@@ -76,7 +76,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-white/10">
           <p className="text-gray-500 text-sm text-center">
-            © {new Date().getFullYear()} FanCortex. All rights reserved.
+            © {new Date().getFullYear()} FanMint. All rights reserved.
           </p>
         </div>
       </div>

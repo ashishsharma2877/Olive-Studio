@@ -91,7 +91,7 @@ export default function ContactPage() {
                 Get in Touch
               </h2>
               <p className="text-gray-400 mb-8 leading-relaxed">
-                We&apos;re here to help you understand how FanCortex can drive
+                We&apos;re here to help you understand how FanMint can drive
                 revenue for your live games. Fill out the form and we&apos;ll
                 get back to you within 24 hours.
               </p>
@@ -104,10 +104,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-white font-medium">Email</h3>
                     <a
-                      href="mailto:hello@fancortex.ai"
+                      href="mailto:hello@fanmint.ai"
                       className="text-gray-400 hover:text-[#00D4FF] transition-colors"
                     >
-                      hello@fancortex.ai
+                      hello@fanmint.ai
                     </a>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export default function ContactPage() {
                   {[
                     "A response within 24 hours",
                     "A quick discovery call to understand your needs",
-                    "A personalized demo of FanCortex",
+                    "A personalized demo of FanMint",
                     "No pressure, just conversation",
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 text-gray-400">

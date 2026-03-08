@@ -190,12 +190,12 @@ export default function UseCasesPage() {
                       </p>
                     </div>
 
-                    {/* How FanCortex Solves It */}
+                    {/* How FanMint Solves It */}
                     <div className="mb-8">
                       <div className="flex items-center gap-2 mb-3">
                         <Zap className="w-5 h-5 text-[#00D4FF]" />
                         <h3 className="text-sm font-semibold text-[#00D4FF] uppercase tracking-wider">
-                          How FanCortex Solves It
+                          How FanMint Solves It
                         </h3>
                       </div>
                       <ul className="space-y-3">
@@ -266,7 +266,7 @@ export default function UseCasesPage() {
               This is just the start
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto mb-8">
-              FanCortex is built to expand with your needs — from churn
+              FanMint is built to expand with your needs — from churn
               prediction to content optimization to competitive intelligence.
               One intelligence layer. Many decisions.
             </p>

@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
       from: process.env.SES_FROM_EMAIL,
       to: process.env.SES_TO_EMAIL,
       replyTo: email,
-      subject: `FanCortex Contact: ${name}${company ? ` from ${company}` : ""}`,
+      subject: `FanMint Contact: ${name}${company ? ` from ${company}` : ""}`,
       text: `
 Name: ${name}
 Email: ${email}

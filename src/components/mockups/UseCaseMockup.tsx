@@ -67,7 +67,7 @@ export function UseCaseMockup({ type, color }: UseCaseMockupProps) {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Lightbulb className="w-4 h-4 text-[#00D4FF]" />
-            <span className="text-white text-sm font-medium">FanCortex Insight</span>
+            <span className="text-white text-sm font-medium">FanMint Insight</span>
           </div>
           <motion.span
             animate={{ opacity: [1, 0.5, 1] }}

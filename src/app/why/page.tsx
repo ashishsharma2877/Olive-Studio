@@ -8,27 +8,27 @@ const comparison = [
   {
     traditional: "Generic across industries",
     aiAnalytics: "Horizontal / any industry",
-    fancortex: "Built for live games",
+    fanmint: "Built for live games",
   },
   {
     traditional: "Black-box AI",
     aiAnalytics: "General-purpose AI",
-    fancortex: "Gaming-specific intelligence",
+    fanmint: "Gaming-specific intelligence",
   },
   {
     traditional: "Post-mortem insights",
     aiAnalytics: "Faster answers to queries",
-    fancortex: "Real-time detection",
+    fanmint: "Real-time detection",
   },
   {
     traditional: "Dashboards you have to check",
     aiAnalytics: "Chat-based interface",
-    fancortex: "Decisions pushed to you",
+    fanmint: "Decisions pushed to you",
   },
   {
     traditional: "You ask questions",
     aiAnalytics: "AI answers your questions",
-    fancortex: "It tells you where to look",
+    fanmint: "It tells you where to look",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function WhyPage() {
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white">
               Why{" "}
-              <span className="gradient-text">FanCortex</span>
+              <span className="gradient-text">FanMint</span>
             </h1>
             <div className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto space-y-2">
               <p>Not another dashboard.</p>
@@ -60,7 +60,7 @@ export default function WhyPage() {
         </div>
       </section>
 
-      {/* What Makes FanCortex Different - Combined Section */}
+      {/* What Makes FanMint Different - Combined Section */}
       <section className="py-20 md:py-32 bg-[#0d0d12]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Headline */}
@@ -72,7 +72,7 @@ export default function WhyPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              What Makes FanCortex Different
+              What Makes FanMint Different
             </h2>
             <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
               Three things that set us apart.
@@ -170,7 +170,7 @@ export default function WhyPage() {
                     AI Analytics
                   </th>
                   <th className="py-4 px-6 text-left text-sm font-semibold text-[#00D4FF] uppercase tracking-wider">
-                    FanCortex
+                    FanMint
                   </th>
                 </tr>
               </thead>
@@ -187,7 +187,7 @@ export default function WhyPage() {
                       {row.aiAnalytics}
                     </td>
                     <td className="py-4 px-6 text-white font-medium">
-                      {row.fancortex}
+                      {row.fanmint}
                     </td>
                   </tr>
                 ))}
@@ -211,7 +211,7 @@ export default function WhyPage() {
               Ready to see the difference?
             </h2>
             <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
-              Let&apos;s talk about how FanCortex can work for your team.
+              Let&apos;s talk about how FanMint can work for your team.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link

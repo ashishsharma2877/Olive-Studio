@@ -93,7 +93,7 @@ const capabilities = [
   {
     icon: Gauge,
     title: "Impact Measurement",
-    description: "Track the revenue impact of every decision FanCortex helps you make.",
+    description: "Track the revenue impact of every decision FanMint helps you make.",
   },
 ];
 
@@ -127,7 +127,7 @@ export default function ProductPage() {
             className="text-center"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white">
-              How FanCortex Works
+              How FanMint Works
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
               One intelligence layer that plugs into your data and delivers
@@ -264,7 +264,7 @@ export default function ProductPage() {
                 Build Custom Apps
               </h2>
               <p className="text-lg text-gray-400 mb-6">
-                Need something specific? Describe what you want in plain English and FanCortex builds it for you.
+                Need something specific? Describe what you want in plain English and FanMint builds it for you.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -363,7 +363,7 @@ export default function ProductPage() {
               See the use cases in action
             </h2>
             <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-              Explore how FanCortex solves specific problems for monetization,
+              Explore how FanMint solves specific problems for monetization,
               marketing, product, and community teams.
             </p>
             <Link

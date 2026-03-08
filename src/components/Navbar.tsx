@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "/why", label: "Why FanCortex" },
+  { href: "/why", label: "Why FanMint" },
   { href: "/product", label: "Product" },
   { href: "/use-cases", label: "Use Cases" },
   { href: "/about", label: "About" },
@@ -24,7 +24,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo-full.png"
-              alt="FanCortex"
+              alt="FanMint"
               width={160}
               height={40}
               className="w-32 md:w-40"
