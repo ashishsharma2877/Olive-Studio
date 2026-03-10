@@ -10,15 +10,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Olive Studio | Fan Intelligence for Live Games",
+  title: "Olive Studio | Player Intelligence for Live Games",
   description:
-    "Turn fan behavior into revenue decisions — across monetization, marketing, product, and engagement. Built by live ops veterans who've done this at scale.",
+    "Turn player behavior into revenue decisions — across monetization, marketing, product, and engagement. Built by live ops veterans who've done this at scale.",
   icons: {
     icon: "/icon-32.png",
     apple: "/icon-32.png",
   },
   keywords: [
-    "fan intelligence",
+    "player intelligence",
     "live games",
     "player analytics",
     "game monetization",
@@ -27,18 +27,18 @@ export const metadata: Metadata = {
     "player retention",
   ],
   openGraph: {
-    title: "Olive Studio | Fan Intelligence for Live Games",
+    title: "Olive Studio | Player Intelligence for Live Games",
     description:
-      "Turn fan behavior into revenue decisions — across monetization, marketing, product, and engagement.",
+      "Turn player behavior into revenue decisions — across monetization, marketing, product, and engagement.",
     url: "https://olivestudio.ai",
     siteName: "Olive Studio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Olive Studio | Fan Intelligence for Live Games",
+    title: "Olive Studio | Player Intelligence for Live Games",
     description:
-      "Turn fan behavior into revenue decisions — across monetization, marketing, product, and engagement.",
+      "Turn player behavior into revenue decisions — across monetization, marketing, product, and engagement.",
   },
 };
 

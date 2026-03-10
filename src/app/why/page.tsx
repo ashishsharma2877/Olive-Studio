@@ -54,7 +54,7 @@ export default function WhyPage() {
             <div className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto space-y-2">
               <p>Not another dashboard.</p>
               <p>Not another chatbot.</p>
-              <p className="text-white font-medium">Turn fan signals into revenue decisions.</p>
+              <p className="text-white font-medium">Turn player signals into revenue decisions.</p>
             </div>
           </motion.div>
         </div>

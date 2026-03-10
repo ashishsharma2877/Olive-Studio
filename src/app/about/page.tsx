@@ -56,7 +56,7 @@ export default function AboutPage() {
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
               Olive Studio was built by live ops and monetization leaders who spent
-              decades at Electronic Arts. We got tired of flying blind — so we
+              decades in the gaming industry. We got tired of flying blind — so we
               built the system we always wished we had.
             </p>
           </motion.div>
@@ -95,8 +95,7 @@ export default function AboutPage() {
                   what&apos;s happening, why, and what to do next.
                 </p>
                 <p className="text-white font-medium">
-                  We call them fans because they&apos;re not just users — they
-                  spend, they churn, they advocate, they rage-quit. Olive Studio
+                  Players spend, churn, advocate, and rage-quit. Olive Studio
                   turns that behavior into revenue decisions.
                 </p>
               </div>

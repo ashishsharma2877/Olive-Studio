@@ -78,10 +78,10 @@ const useCases = [
     id: "sentiment",
     icon: Heart,
     color: "#F472B6",
-    title: "Fan Sentiment & Health",
+    title: "Player Sentiment & Health",
     subtitle: "Catch sentiment shifts before Reddit does",
     personas: ["Community Lead", "Brand Marketing", "Live Ops"],
-    pain: "Fan sentiment is shifting — frustration with matchmaking, excitement about a new mode — and you're finding out on Reddit or Twitter, not in your data.",
+    pain: "Player sentiment is shifting — frustration with matchmaking, excitement about a new mode — and you're finding out on Reddit or Twitter, not in your data.",
     solution: [
       "Monitors behavioral signals that indicate sentiment shifts",
       "Correlates with external signals (social, reviews, community)",
@@ -122,7 +122,7 @@ export default function UseCasesPage() {
               <span className="gradient-text">Go Further.</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-              Win more fans. Keep them longer. With a platform that learns you.
+              Win more players. Keep them longer. With a platform that learns you.
             </p>
           </motion.div>
         </div>

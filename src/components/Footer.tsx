@@ -29,7 +29,7 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-4 text-gray-400 text-sm max-w-md">
-              Fan Intelligence for Live Games. Turn fan behavior into revenue
+              Player Intelligence for Live Games. Turn player behavior into revenue
               decisions — across monetization, marketing, product, and engagement.
             </p>
           </div>

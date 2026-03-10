@@ -38,8 +38,8 @@ const useCases = [
   },
   {
     icon: Heart,
-    title: "Fan Sentiment & Health",
-    description: "Your fans are frustrated. You're finding out on Reddit, not in your data.",
+    title: "Player Sentiment & Health",
+    description: "Your players are frustrated. You're finding out on Reddit, not in your data.",
     href: "/use-cases#sentiment",
     color: "from-[#F472B6] to-[#F472B6]",
   },
@@ -110,12 +110,12 @@ export default function Home() {
             className="text-center"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              <span className="gradient-text">Fan Intelligence</span>
+              <span className="gradient-text">Player Intelligence</span>
               <br />
               <span className="text-white">for Live Services</span>
             </h1>
             <p className="mt-6 md:mt-8 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Turn fan behavior into revenue decisions — across marketing,
+              Turn player behavior into revenue decisions — across marketing,
               monetization, and engagement. Built by gaming AI veterans
               who&apos;ve done this at scale.
             </p>
@@ -149,7 +149,7 @@ export default function Home() {
               Start Here. Go Further.
             </h2>
             <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
-              Win more fans. Keep them longer. With a platform that learns you.
+              Win more players. Keep them longer. With a platform that learns you.
             </p>
           </motion.div>
 
@@ -342,7 +342,7 @@ export default function Home() {
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl mx-auto leading-tight">
               Built by former{" "}
-              <span className="gradient-text">Electronic Arts</span> leaders
+              <span className="gradient-text">gaming</span> leaders
               with 25+ years turning player data into decisions for studios,
               marketing, and CX teams.
             </h2>

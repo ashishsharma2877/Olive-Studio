@@ -66,7 +66,7 @@ export default function ContactPage() {
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white">
               Let&apos;s Talk{" "}
-              <span className="gradient-text">Fan Intelligence</span>
+              <span className="gradient-text">Player Intelligence</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
               Whether you&apos;re running live ops on a flagship title or
