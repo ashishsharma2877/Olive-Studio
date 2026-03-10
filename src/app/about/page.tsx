@@ -8,14 +8,14 @@ const founders = [
   {
     name: "Krish Ravikumar",
     role: "CEO & Co-Founder",
-    bio: "Spent years as a senior executive at EA, building and scaling platforms, leading large teams, and tackling complex monetization problems. Known for spotting patterns early and turning complexity into systems teams actually use.",
+    bio: "Spent years as a senior executive in gaming, building and scaling platforms, leading large teams, and tackling complex monetization problems. Known for spotting patterns early and turning complexity into systems teams actually use.",
     focus: "Product, vision & turning signals into decisions",
     education: "Georgia State University · Mensa",
   },
   {
     name: "Siddhartha Sharma",
     role: "CTO & Co-Founder",
-    bio: "25+ years designing and scaling systems across EA and other enterprises. Deep expertise in architecture, AI systems, and player data infrastructure. The calm force behind the code.",
+    bio: "25+ years designing and scaling systems across gaming and enterprise. Deep expertise in architecture, AI systems, and player data infrastructure. The calm force behind the code.",
     focus: "Architecture, AI systems & technical excellence",
     education: "IIT Kanpur · University of Maryland · Stanford University",
   },
@@ -79,7 +79,7 @@ export default function AboutPage() {
               </div>
               <div className="mt-4 space-y-6 text-gray-300 leading-relaxed text-lg">
                 <p>
-                  At EA, we saw the same problem over and over: smart teams
+                  In gaming, we saw the same problem over and over: smart teams
                   making pricing, marketing, and product decisions based on gut,
                   spreadsheets, and post-mortems.
                 </p>
