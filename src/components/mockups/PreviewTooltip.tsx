@@ -35,7 +35,7 @@ export function PreviewTooltip({ children, position = "left" }: PreviewTooltipPr
             }`}
           >
             <p className="text-[10px] text-gray-300">
-              Preview — <Link href="/contact" className="text-[#00D4FF] hover:underline">Get Started</Link>
+              Preview — <Link href="/contact" className="text-[#4ADE80] hover:underline">Get Started</Link>
             </p>
           </motion.div>
         )}

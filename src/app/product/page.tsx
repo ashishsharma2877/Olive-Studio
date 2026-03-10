@@ -32,7 +32,7 @@ const cycleSteps = [
   {
     icon: Search,
     title: "Surface",
-    color: "#00D4FF",
+    color: "#4ADE80",
     description: "Insights come to you — personalized to your role and priorities",
     features: [
       "No dashboards to check — alerts find you",
@@ -43,7 +43,7 @@ const cycleSteps = [
   {
     icon: Target,
     title: "Act",
-    color: "#00FF88",
+    color: "#4ADE80",
     description: "Run scenarios, trigger automations, or build custom apps",
     features: [
       "One-click actions or human-in-the-loop",
@@ -54,7 +54,7 @@ const cycleSteps = [
   {
     icon: Brain,
     title: "Learn",
-    color: "#8B5CF6",
+    color: "#00D4FF",
     description: "Living Context — it learns your priorities, not just your data",
     features: [
       "Adapts to your role and decision patterns",
@@ -93,7 +93,7 @@ const capabilities = [
   {
     icon: Gauge,
     title: "Impact Measurement",
-    description: "Track the revenue impact of every decision FanMint helps you make.",
+    description: "Track the revenue impact of every decision Olive Studio helps you make.",
   },
 ];
 
@@ -117,7 +117,7 @@ export default function ProductPage() {
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-30" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00D4FF]/10 rounded-full blur-[128px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#4ADE80]/10 rounded-full blur-[128px]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -127,7 +127,7 @@ export default function ProductPage() {
             className="text-center"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white">
-              How FanMint Works
+              How Olive Studio Works
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
               One intelligence layer that plugs into your data and delivers
@@ -147,7 +147,7 @@ export default function ProductPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <div className="inline-flex px-4 py-2 rounded-full bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-[#0A0A0F] text-sm font-bold mb-4">
+            <div className="inline-flex px-4 py-2 rounded-full bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F] text-sm font-bold mb-4">
               Foundation
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -168,7 +168,7 @@ export default function ProductPage() {
               <ul className="space-y-4">
                 {foundationStep.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#00FF88] mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#4ADE80] mt-0.5 flex-shrink-0" />
                     <span className="text-gray-300">{feature}</span>
                   </li>
                 ))}
@@ -192,7 +192,7 @@ export default function ProductPage() {
       <section className="py-8 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <span className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-sm font-semibold text-[#0A0A0F]">
+            <span className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-sm font-semibold text-[#0A0A0F]">
               <span className="mr-2">Insights from day one — and it only gets smarter</span>
               <span>↻</span>
             </span>
@@ -264,7 +264,7 @@ export default function ProductPage() {
                 Build Custom Apps
               </h2>
               <p className="text-lg text-gray-400 mb-6">
-                Need something specific? Describe what you want in plain English and FanMint builds it for you.
+                Need something specific? Describe what you want in plain English and Olive Studio builds it for you.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -298,10 +298,10 @@ export default function ProductPage() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex justify-center mt-16"
           >
-            <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-[#8B5CF6]/20 to-[#00D4FF]/20 border border-white/10">
-              <span className="text-[#8B5CF6]">↰</span>
+            <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-[#00D4FF]/20 to-[#4ADE80]/20 border border-white/10">
+              <span className="text-[#00D4FF]">↰</span>
               <span className="text-sm text-gray-300">The more you use it, the smarter it gets</span>
-              <span className="text-[#00D4FF]">↱</span>
+              <span className="text-[#4ADE80]">↱</span>
             </div>
           </motion.div>
         </div>
@@ -338,7 +338,7 @@ export default function ProductPage() {
                 variants={fadeInUp}
                 className="p-6 rounded-xl bg-[#14141A] border border-white/10 hover:border-white/20 transition-colors"
               >
-                <capability.icon className="w-10 h-10 text-[#00D4FF] mb-4" />
+                <capability.icon className="w-10 h-10 text-[#4ADE80] mb-4" />
                 <h3 className="text-lg font-semibold text-white mb-2">
                   {capability.title}
                 </h3>
@@ -363,12 +363,12 @@ export default function ProductPage() {
               See the use cases in action
             </h2>
             <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-              Explore how FanMint solves specific problems for monetization,
+              Explore how Olive Studio solves specific problems for monetization,
               marketing, product, and community teams.
             </p>
             <Link
               href="/use-cases"
-              className="inline-flex items-center px-8 py-4 text-base font-semibold rounded-lg bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-[#0A0A0F] hover:opacity-90 transition-all hover:scale-105"
+              className="inline-flex items-center px-8 py-4 text-base font-semibold rounded-lg bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F] hover:opacity-90 transition-all hover:scale-105"
             >
               Explore Use Cases
               <ArrowRight className="ml-2 w-5 h-5" />

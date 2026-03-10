@@ -41,7 +41,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-30" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#8B5CF6]/10 rounded-full blur-[128px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00D4FF]/10 rounded-full blur-[128px]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -55,7 +55,7 @@ export default function AboutPage() {
               <span className="gradient-text">Trenches</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-              FanMint was built by live ops and monetization leaders who spent
+              Olive Studio was built by live ops and monetization leaders who spent
               decades at Electronic Arts. We got tired of flying blind — so we
               built the system we always wished we had.
             </p>
@@ -74,7 +74,7 @@ export default function AboutPage() {
             className="max-w-4xl mx-auto"
           >
             <div className="relative p-8 md:p-12 rounded-2xl bg-[#14141A] border border-white/10">
-              <div className="absolute -top-4 left-8 px-4 py-1 rounded-full bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-[#0A0A0F] text-sm font-bold">
+              <div className="absolute -top-4 left-8 px-4 py-1 rounded-full bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F] text-sm font-bold">
                 Our Story
               </div>
               <div className="mt-4 space-y-6 text-gray-300 leading-relaxed text-lg">
@@ -90,13 +90,13 @@ export default function AboutPage() {
                   millions on the table.
                 </p>
                 <p>
-                  We built FanMint to fix that. Not another dashboard. Not
+                  We built Olive Studio to fix that. Not another dashboard. Not
                   another alert system. A real intelligence layer that tells you
                   what&apos;s happening, why, and what to do next.
                 </p>
                 <p className="text-white font-medium">
                   We call them fans because they&apos;re not just users — they
-                  spend, they churn, they advocate, they rage-quit. FanMint
+                  spend, they churn, they advocate, they rage-quit. Olive Studio
                   turns that behavior into revenue decisions.
                 </p>
               </div>
@@ -137,7 +137,7 @@ export default function AboutPage() {
                 className="p-8 rounded-xl bg-[#14141A] border border-white/10"
               >
                 {/* Avatar Placeholder */}
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#00D4FF] to-[#8B5CF6] flex items-center justify-center mb-6">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#4ADE80] to-[#00D4FF] flex items-center justify-center mb-6">
                   <span className="text-3xl font-bold text-[#0A0A0F]">
                     {founder.name
                       .split(" ")
@@ -147,7 +147,7 @@ export default function AboutPage() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-white">{founder.name}</h3>
-                <p className="text-[#00D4FF] font-medium mb-4">{founder.role}</p>
+                <p className="text-[#4ADE80] font-medium mb-4">{founder.role}</p>
 
                 <p className="text-gray-300 leading-relaxed mb-6">
                   {founder.bio}
@@ -213,7 +213,7 @@ export default function AboutPage() {
                 variants={fadeInUp}
                 className="text-center p-6"
               >
-                <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#00D4FF]/20 to-[#8B5CF6]/20 flex items-center justify-center">
+                <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#4ADE80]/20 to-[#00D4FF]/20 flex items-center justify-center">
                   <span className="text-xl font-bold gradient-text">
                     {index + 1}
                   </span>
@@ -238,7 +238,7 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
             className="relative rounded-2xl overflow-hidden"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-[#00D4FF]/20 to-[#8B5CF6]/20" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#4ADE80]/20 to-[#00D4FF]/20" />
             <div
               className="absolute inset-0 bg-[#14141A]"
               style={{ opacity: 0.9 }}
@@ -255,7 +255,7 @@ export default function AboutPage() {
               <div className="mt-8">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center px-8 py-4 text-base font-semibold rounded-lg bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-[#0A0A0F] hover:opacity-90 transition-all hover:scale-105"
+                  className="inline-flex items-center px-8 py-4 text-base font-semibold rounded-lg bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F] hover:opacity-90 transition-all hover:scale-105"
                 >
                   Get in Touch
                   <ArrowRight className="ml-2 w-5 h-5" />

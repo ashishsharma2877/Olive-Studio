@@ -18,21 +18,21 @@ const apps = [
     name: "Player LTV",
     icon: TrendingUp,
     isFavorite: true,
-    color: "#00D4FF",
+    color: "#4ADE80",
   },
   {
     id: 2,
     name: "Offer Optimizer",
     icon: DollarSign,
     isFavorite: true,
-    color: "#00FF88",
+    color: "#4ADE80",
   },
   {
     id: 3,
     name: "Churn Predictor",
     icon: Users,
     isFavorite: true,
-    color: "#8B5CF6",
+    color: "#00D4FF",
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const apps = [
     name: "Live Ops Monitor",
     icon: Zap,
     isFavorite: true,
-    color: "#00D4FF",
+    color: "#4ADE80",
   },
 ];
 
@@ -88,7 +88,7 @@ export function AppsGalleryMockup() {
         <PreviewTooltip>
           <motion.button
             whileHover={{ scale: 1.05 }}
-            className="px-3 py-1.5 text-xs font-medium rounded-lg bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-[#0A0A0F]"
+            className="px-3 py-1.5 text-xs font-medium rounded-lg bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F]"
           >
             + New App
           </motion.button>
@@ -156,7 +156,7 @@ export function AppsGalleryMockup() {
       >
         <span>6 apps available</span>
         <PreviewTooltip>
-          <span className="text-[#00D4FF] cursor-pointer hover:underline">Browse all →</span>
+          <span className="text-[#4ADE80] cursor-pointer hover:underline">Browse all →</span>
         </PreviewTooltip>
       </motion.div>
     </div>

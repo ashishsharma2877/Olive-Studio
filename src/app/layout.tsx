@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "FanMint | Fan Intelligence for Live Games",
+  title: "Olive Studio | Fan Intelligence for Live Games",
   description:
     "Turn fan behavior into revenue decisions — across monetization, marketing, product, and engagement. Built by live ops veterans who've done this at scale.",
   icons: {
@@ -27,16 +27,16 @@ export const metadata: Metadata = {
     "player retention",
   ],
   openGraph: {
-    title: "FanMint | Fan Intelligence for Live Games",
+    title: "Olive Studio | Fan Intelligence for Live Games",
     description:
       "Turn fan behavior into revenue decisions — across monetization, marketing, product, and engagement.",
-    url: "https://fanmint.ai",
-    siteName: "FanMint",
+    url: "https://olivestudio.ai",
+    siteName: "Olive Studio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "FanMint | Fan Intelligence for Live Games",
+    title: "Olive Studio | Fan Intelligence for Live Games",
     description:
       "Turn fan behavior into revenue decisions — across monetization, marketing, product, and engagement.",
   },

@@ -96,7 +96,7 @@ function ChurnRiskResult() {
         {[
           { label: "At Risk", value: "12", color: "#FF4D4D" },
           { label: "Revenue", value: "$18K", color: "#FFB800" },
-          { label: "Avg LTV", value: "$1.2K", color: "#00D4FF" },
+          { label: "Avg LTV", value: "$1.2K", color: "#4ADE80" },
         ].map((kpi, i) => (
           <motion.div
             key={kpi.label}
@@ -145,7 +145,7 @@ function ChurnRiskResult() {
         <div className="flex-1 p-1.5 rounded bg-[#0A0A0F] border border-white/5 flex items-center justify-around">
           <MiniDonut value={72} color="#FF4D4D" label="High" />
           <MiniDonut value={45} color="#FFB800" label="Med" />
-          <MiniDonut value={18} color="#00FF88" label="Low" />
+          <MiniDonut value={18} color="#4ADE80" label="Low" />
         </div>
       </motion.div>
     </div>
@@ -158,9 +158,9 @@ function UAChannelResult() {
       {/* KPIs */}
       <div className="flex gap-1.5">
         {[
-          { label: "Best Channel", value: "TikTok", color: "#00D4FF" },
-          { label: "Avg LTV", value: "$142", color: "#00FF88" },
-          { label: "ROAS", value: "3.2x", color: "#8B5CF6" },
+          { label: "Best Channel", value: "TikTok", color: "#4ADE80" },
+          { label: "Avg LTV", value: "$142", color: "#4ADE80" },
+          { label: "ROAS", value: "3.2x", color: "#00D4FF" },
         ].map((kpi, i) => (
           <motion.div
             key={kpi.label}
@@ -184,7 +184,7 @@ function UAChannelResult() {
         >
           <p className="text-[7px] text-gray-500 mb-1">LTV by Channel</p>
           <div className="h-[calc(100%-14px)]">
-            <MiniBarChart data={[142, 118, 95, 82, 64]} color="#00D4FF" labels={["TikTok", "Meta", "Google", "Unity", "Apple"]} />
+            <MiniBarChart data={[142, 118, 95, 82, 64]} color="#4ADE80" labels={["TikTok", "Meta", "Google", "Unity", "Apple"]} />
           </div>
         </motion.div>
         <motion.div
@@ -195,7 +195,7 @@ function UAChannelResult() {
         >
           <p className="text-[7px] text-gray-500 mb-1">D7 Retention</p>
           <div className="h-[calc(100%-14px)]">
-            <MiniBarChart data={[38, 32, 28, 24, 18]} color="#00FF88" labels={["TikTok", "Meta", "Google", "Unity", "Apple"]} />
+            <MiniBarChart data={[38, 32, 28, 24, 18]} color="#4ADE80" labels={["TikTok", "Meta", "Google", "Unity", "Apple"]} />
           </div>
         </motion.div>
       </div>
@@ -208,7 +208,7 @@ function UAChannelResult() {
       >
         <p className="text-[7px] text-gray-500 mb-1">Weekly Spend Efficiency</p>
         <div className="h-8">
-          <MiniLineChart data={[2.1, 2.4, 2.8, 3.0, 2.9, 3.2, 3.4]} color="#8B5CF6" />
+          <MiniLineChart data={[2.1, 2.4, 2.8, 3.0, 2.9, 3.2, 3.4]} color="#00D4FF" />
         </div>
       </motion.div>
     </div>
@@ -221,8 +221,8 @@ function BattlePassResult() {
       {/* KPIs */}
       <div className="flex gap-1.5">
         {[
-          { label: "S4 Conv.", value: "12.4%", color: "#00FF88" },
-          { label: "vs S3", value: "+2.1%", color: "#00D4FF" },
+          { label: "S4 Conv.", value: "12.4%", color: "#4ADE80" },
+          { label: "vs S3", value: "+2.1%", color: "#4ADE80" },
           { label: "Revenue", value: "$2.1M", color: "#FFB800" },
         ].map((kpi, i) => (
           <motion.div
@@ -246,7 +246,7 @@ function BattlePassResult() {
       >
         <p className="text-[7px] text-gray-500 mb-1">Conversion by Season</p>
         <div className="h-[calc(100%-14px)]">
-          <MiniBarChart data={[8.2, 9.5, 10.3, 12.4]} color="#00FF88" labels={["S1", "S2", "S3", "S4"]} />
+          <MiniBarChart data={[8.2, 9.5, 10.3, 12.4]} color="#4ADE80" labels={["S1", "S2", "S3", "S4"]} />
         </div>
       </motion.div>
       {/* Bottom charts */}
@@ -259,7 +259,7 @@ function BattlePassResult() {
         >
           <p className="text-[7px] text-gray-500 mb-1">By Tier</p>
           <div className="h-10">
-            <MiniBarChart data={[42, 35, 23]} color="#8B5CF6" labels={["Basic", "Premium", "Ultimate"]} />
+            <MiniBarChart data={[42, 35, 23]} color="#00D4FF" labels={["Basic", "Premium", "Ultimate"]} />
           </div>
         </motion.div>
         <motion.div
@@ -270,7 +270,7 @@ function BattlePassResult() {
         >
           <p className="text-[7px] text-gray-500 mb-1">D7 Completion</p>
           <div className="h-10">
-            <MiniLineChart data={[15, 28, 42, 55, 68, 75, 82]} color="#00D4FF" />
+            <MiniLineChart data={[15, 28, 42, 55, 68, 75, 82]} color="#4ADE80" />
           </div>
         </motion.div>
       </div>
@@ -353,7 +353,7 @@ export function AppStudioMockup() {
               <div className="text-center px-4">
                 <Sparkles className="w-6 h-6 text-[#FFB800]/30 mx-auto mb-2" />
                 <p className="text-gray-500 text-[10px] mb-0.5">Describe what you want to know</p>
-                <p className="text-gray-600 text-[9px]">FanMint builds what you need — and more</p>
+                <p className="text-gray-600 text-[9px]">Olive Studio builds what you need — and more</p>
               </div>
             </motion.div>
           )}
@@ -392,7 +392,7 @@ export function AppStudioMockup() {
                 className="flex items-center justify-between mb-1.5"
               >
                 <span className="text-white text-[10px] font-semibold">{currentConfig.title}</span>
-                <span className="text-[#00FF88] text-[8px]">✓ Built</span>
+                <span className="text-[#4ADE80] text-[8px]">✓ Built</span>
               </motion.div>
 
               {/* Dynamic Result Content */}
@@ -412,7 +412,7 @@ export function AppStudioMockup() {
           <span className="text-white text-[10px]">
             {displayText}
             {phase === "typing" && (
-              <span className={`inline-block w-[1.5px] h-[10px] bg-[#00D4FF] ml-[1px] align-middle ${showCursor ? 'opacity-100' : 'opacity-0'}`} />
+              <span className={`inline-block w-[1.5px] h-[10px] bg-[#4ADE80] ml-[1px] align-middle ${showCursor ? 'opacity-100' : 'opacity-0'}`} />
             )}
           </span>
           {displayText.length === 0 && phase === "typing" && (
@@ -421,7 +421,7 @@ export function AppStudioMockup() {
         </div>
         <div className="flex items-center gap-1.5">
           <Mic className="w-3 h-3 text-gray-500" />
-          <Send className={`w-3 h-3 ${displayText.length > 0 ? 'text-[#00D4FF]' : 'text-gray-500'}`} />
+          <Send className={`w-3 h-3 ${displayText.length > 0 ? 'text-[#4ADE80]' : 'text-gray-500'}`} />
         </div>
       </div>
     </div>

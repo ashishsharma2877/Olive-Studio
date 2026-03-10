@@ -58,7 +58,7 @@ export function LearnMockup() {
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <Brain className="w-4 h-4 text-[#8B5CF6]" />
+          <Brain className="w-4 h-4 text-[#00D4FF]" />
           <h3 className="text-white font-semibold text-sm">Living Context</h3>
         </div>
         <motion.div
@@ -66,7 +66,7 @@ export function LearnMockup() {
             boxShadow: ["0 0 0 0 rgba(139, 92, 246, 0)", "0 0 0 8px rgba(139, 92, 246, 0.1)", "0 0 0 0 rgba(139, 92, 246, 0)"]
           }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="px-2 py-0.5 rounded-full bg-[#8B5CF6]/20 text-[#8B5CF6] text-[10px] font-medium"
+          className="px-2 py-0.5 rounded-full bg-[#00D4FF]/20 text-[#00D4FF] text-[10px] font-medium"
         >
           Learning
         </motion.div>
@@ -74,7 +74,7 @@ export function LearnMockup() {
 
       {/* User Profile */}
       <div className="flex items-center gap-3 p-3 rounded-lg bg-[#14141A] border border-white/10 mb-4">
-        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#00D4FF] to-[#8B5CF6] flex items-center justify-center">
+        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#4ADE80] to-[#00D4FF] flex items-center justify-center">
           <User className="w-4 h-4 text-white" />
         </div>
         <div>
@@ -104,12 +104,12 @@ export function LearnMockup() {
                   {item.value}
                 </span>
                 {item.learned ? (
-                  <CheckCircle className="w-3 h-3 text-[#00FF88]" />
+                  <CheckCircle className="w-3 h-3 text-[#4ADE80]" />
                 ) : (
                   <motion.div
                     animate={{ rotate: 360 }}
                     transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                    className="w-3 h-3 border border-[#8B5CF6] border-t-transparent rounded-full"
+                    className="w-3 h-3 border border-[#00D4FF] border-t-transparent rounded-full"
                   />
                 )}
               </div>
@@ -123,7 +123,7 @@ export function LearnMockup() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="mt-auto p-2 rounded bg-gradient-to-r from-[#8B5CF6]/10 to-[#00D4FF]/10 border border-white/5"
+        className="mt-auto p-2 rounded bg-gradient-to-r from-[#00D4FF]/10 to-[#4ADE80]/10 border border-white/5"
       >
         <div className="flex items-center justify-between text-[10px]">
           <span className="text-gray-400">Context accuracy</span>
@@ -133,10 +133,10 @@ export function LearnMockup() {
                 initial={{ width: 0 }}
                 animate={{ width: "87%" }}
                 transition={{ delay: 1.2, duration: 0.8 }}
-                className="h-full bg-gradient-to-r from-[#8B5CF6] to-[#00D4FF] rounded-full"
+                className="h-full bg-gradient-to-r from-[#00D4FF] to-[#4ADE80] rounded-full"
               />
             </div>
-            <span className="text-[#00FF88] font-medium">87%</span>
+            <span className="text-[#4ADE80] font-medium">87%</span>
           </div>
         </div>
       </motion.div>

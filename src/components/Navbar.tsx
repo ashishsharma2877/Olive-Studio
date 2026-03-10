@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "/why", label: "Why FanMint" },
+  { href: "/why", label: "Why Olive Studio" },
   { href: "/product", label: "Product" },
   { href: "/use-cases", label: "Use Cases" },
   { href: "/about", label: "About" },
@@ -23,11 +23,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo-full.png"
-              alt="FanMint"
-              width={160}
-              height={40}
-              className="w-32 md:w-40"
+              src="/images/logo-full.svg"
+              alt="Olive Studio"
+              width={200}
+              height={50}
+              className="w-40 md:w-48"
               priority
             />
           </Link>
@@ -45,7 +45,7 @@ export default function Navbar() {
             ))}
             <Link
               href="/contact"
-              className="px-5 py-2.5 text-sm font-semibold rounded-lg bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-[#0A0A0F] hover:opacity-90 transition-opacity"
+              className="px-5 py-2.5 text-sm font-semibold rounded-lg bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F] hover:opacity-90 transition-opacity"
             >
               Get Started
             </Link>
@@ -84,7 +84,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setIsOpen(false)}
-                className="block w-full text-center px-5 py-3 text-sm font-semibold rounded-lg bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-[#0A0A0F]"
+                className="block w-full text-center px-5 py-3 text-sm font-semibold rounded-lg bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F]"
               >
                 Get Started
               </Link>

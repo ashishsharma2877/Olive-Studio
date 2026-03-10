@@ -55,7 +55,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-30" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00D4FF]/10 rounded-full blur-[128px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#4ADE80]/10 rounded-full blur-[128px]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -91,7 +91,7 @@ export default function ContactPage() {
                 Get in Touch
               </h2>
               <p className="text-gray-400 mb-8 leading-relaxed">
-                We&apos;re here to help you understand how FanMint can drive
+                We&apos;re here to help you understand how Olive Studio can drive
                 revenue for your live games. Fill out the form and we&apos;ll
                 get back to you within 24 hours.
               </p>
@@ -99,15 +99,15 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-lg bg-[#14141A] border border-white/10">
-                    <Mail className="w-5 h-5 text-[#00D4FF]" />
+                    <Mail className="w-5 h-5 text-[#4ADE80]" />
                   </div>
                   <div>
                     <h3 className="text-white font-medium">Email</h3>
                     <a
-                      href="mailto:hello@fanmint.ai"
-                      className="text-gray-400 hover:text-[#00D4FF] transition-colors"
+                      href="mailto:hello@olivestudio.ai"
+                      className="text-gray-400 hover:text-[#4ADE80] transition-colors"
                     >
-                      hello@fanmint.ai
+                      hello@olivestudio.ai
                     </a>
                   </div>
                 </div>
@@ -122,11 +122,11 @@ export default function ContactPage() {
                   {[
                     "A response within 24 hours",
                     "A quick discovery call to understand your needs",
-                    "A personalized demo of FanMint",
+                    "A personalized demo of Olive Studio",
                     "No pressure, just conversation",
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 text-gray-400">
-                      <CheckCircle className="w-4 h-4 text-[#00FF88] flex-shrink-0" />
+                      <CheckCircle className="w-4 h-4 text-[#4ADE80] flex-shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -143,8 +143,8 @@ export default function ContactPage() {
               {isSubmitted ? (
                 <div className="h-full flex items-center justify-center">
                   <div className="text-center p-8 rounded-xl bg-[#14141A] border border-white/10">
-                    <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-[#00FF88]/20 flex items-center justify-center">
-                      <CheckCircle className="w-8 h-8 text-[#00FF88]" />
+                    <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-[#4ADE80]/20 flex items-center justify-center">
+                      <CheckCircle className="w-8 h-8 text-[#4ADE80]" />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-2">
                       Message Sent!
@@ -172,7 +172,7 @@ export default function ContactPage() {
                         required
                         value={formState.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg bg-[#14141A] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#00D4FF] focus:ring-1 focus:ring-[#00D4FF] transition-colors"
+                        className="w-full px-4 py-3 rounded-lg bg-[#14141A] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#4ADE80] focus:ring-1 focus:ring-[#4ADE80] transition-colors"
                         placeholder="Your name"
                       />
                     </div>
@@ -190,7 +190,7 @@ export default function ContactPage() {
                         required
                         value={formState.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg bg-[#14141A] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#00D4FF] focus:ring-1 focus:ring-[#00D4FF] transition-colors"
+                        className="w-full px-4 py-3 rounded-lg bg-[#14141A] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#4ADE80] focus:ring-1 focus:ring-[#4ADE80] transition-colors"
                         placeholder="you@company.com"
                       />
                     </div>
@@ -210,7 +210,7 @@ export default function ContactPage() {
                         name="company"
                         value={formState.company}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg bg-[#14141A] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#00D4FF] focus:ring-1 focus:ring-[#00D4FF] transition-colors"
+                        className="w-full px-4 py-3 rounded-lg bg-[#14141A] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#4ADE80] focus:ring-1 focus:ring-[#4ADE80] transition-colors"
                         placeholder="Your company"
                       />
                     </div>
@@ -226,7 +226,7 @@ export default function ContactPage() {
                         name="role"
                         value={formState.role}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg bg-[#14141A] border border-white/10 text-white focus:outline-none focus:border-[#00D4FF] focus:ring-1 focus:ring-[#00D4FF] transition-colors"
+                        className="w-full px-4 py-3 rounded-lg bg-[#14141A] border border-white/10 text-white focus:outline-none focus:border-[#4ADE80] focus:ring-1 focus:ring-[#4ADE80] transition-colors"
                       >
                         <option value="">Select your role</option>
                         <option value="monetization">Monetization / Live Ops</option>
@@ -253,7 +253,7 @@ export default function ContactPage() {
                       rows={5}
                       value={formState.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg bg-[#14141A] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#00D4FF] focus:ring-1 focus:ring-[#00D4FF] transition-colors resize-none"
+                      className="w-full px-4 py-3 rounded-lg bg-[#14141A] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#4ADE80] focus:ring-1 focus:ring-[#4ADE80] transition-colors resize-none"
                       placeholder="Tell us about your game and what challenges you're facing..."
                     />
                   </div>
@@ -267,7 +267,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-lg bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-[#0A0A0F] hover:opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-lg bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F] hover:opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
                       <>

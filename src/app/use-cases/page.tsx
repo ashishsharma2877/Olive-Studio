@@ -20,7 +20,7 @@ const useCases = [
   {
     id: "pricing",
     icon: DollarSign,
-    color: "#00D4FF",
+    color: "#4ADE80",
     title: "Offer & Pricing Optimization",
     subtitle: "Stop leaving money on the table every event",
     personas: ["Monetization PM", "Live Ops Director", "Game Economist"],
@@ -39,7 +39,7 @@ const useCases = [
   {
     id: "roas",
     icon: TrendingUp,
-    color: "#00FF88",
+    color: "#4ADE80",
     title: "Marketing ROAS & Funnel Intelligence",
     subtitle: "Tie UA spend to LTV, not vanity metrics",
     personas: ["VP Digital Marketing", "UA Lead", "Growth Team"],
@@ -58,7 +58,7 @@ const useCases = [
   {
     id: "feature-roi",
     icon: BarChart3,
-    color: "#8B5CF6",
+    color: "#00D4FF",
     title: "Feature ROI & Engagement",
     subtitle: "Know which features actually move revenue",
     personas: ["Studio GM", "Product Lead", "Executive Team"],
@@ -107,8 +107,8 @@ export default function UseCasesPage() {
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-30" />
-        <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#00D4FF]/10 rounded-full blur-[128px]" />
-        <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] bg-[#8B5CF6]/10 rounded-full blur-[128px]" />
+        <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#4ADE80]/10 rounded-full blur-[128px]" />
+        <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] bg-[#00D4FF]/10 rounded-full blur-[128px]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -190,18 +190,18 @@ export default function UseCasesPage() {
                       </p>
                     </div>
 
-                    {/* How FanMint Solves It */}
+                    {/* How Olive Studio Solves It */}
                     <div className="mb-8">
                       <div className="flex items-center gap-2 mb-3">
-                        <Zap className="w-5 h-5 text-[#00D4FF]" />
-                        <h3 className="text-sm font-semibold text-[#00D4FF] uppercase tracking-wider">
-                          How FanMint Solves It
+                        <Zap className="w-5 h-5 text-[#4ADE80]" />
+                        <h3 className="text-sm font-semibold text-[#4ADE80] uppercase tracking-wider">
+                          How Olive Studio Solves It
                         </h3>
                       </div>
                       <ul className="space-y-3">
                         {useCase.solution.map((item, i) => (
                           <li key={i} className="flex items-start gap-3">
-                            <CheckCircle className="w-5 h-5 text-[#00FF88] mt-0.5 flex-shrink-0" />
+                            <CheckCircle className="w-5 h-5 text-[#4ADE80] mt-0.5 flex-shrink-0" />
                             <span className="text-gray-300">{item}</span>
                           </li>
                         ))}
@@ -211,8 +211,8 @@ export default function UseCasesPage() {
                     {/* Outcomes */}
                     <div>
                       <div className="flex items-center gap-2 mb-3">
-                        <Target className="w-5 h-5 text-[#00FF88]" />
-                        <h3 className="text-sm font-semibold text-[#00FF88] uppercase tracking-wider">
+                        <Target className="w-5 h-5 text-[#4ADE80]" />
+                        <h3 className="text-sm font-semibold text-[#4ADE80] uppercase tracking-wider">
                           Outcome
                         </h3>
                       </div>
@@ -266,13 +266,13 @@ export default function UseCasesPage() {
               This is just the start
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto mb-8">
-              FanMint is built to expand with your needs — from churn
+              Olive Studio is built to expand with your needs — from churn
               prediction to content optimization to competitive intelligence.
               One intelligence layer. Many decisions.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-4 text-base font-semibold rounded-lg bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-[#0A0A0F] hover:opacity-90 transition-all hover:scale-105"
+              className="inline-flex items-center px-8 py-4 text-base font-semibold rounded-lg bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F] hover:opacity-90 transition-all hover:scale-105"
             >
               Let&apos;s Talk
               <ArrowRight className="ml-2 w-5 h-5" />

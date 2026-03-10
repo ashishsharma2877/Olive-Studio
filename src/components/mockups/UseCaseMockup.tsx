@@ -66,13 +66,13 @@ export function UseCaseMockup({ type, color }: UseCaseMockupProps) {
       <div className="p-4 border-b border-white/10">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Lightbulb className="w-4 h-4 text-[#00D4FF]" />
-            <span className="text-white text-sm font-medium">FanMint Insight</span>
+            <Lightbulb className="w-4 h-4 text-[#4ADE80]" />
+            <span className="text-white text-sm font-medium">Olive Studio Insight</span>
           </div>
           <motion.span
             animate={{ opacity: [1, 0.5, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="px-2 py-0.5 rounded-full bg-[#00D4FF]/20 text-[#00D4FF] text-[10px] font-medium"
+            className="px-2 py-0.5 rounded-full bg-[#4ADE80]/20 text-[#4ADE80] text-[10px] font-medium"
           >
             Live
           </motion.span>
@@ -117,7 +117,7 @@ export function UseCaseMockup({ type, color }: UseCaseMockupProps) {
 
           {/* Action */}
           <div className="p-2 rounded bg-[#0A0A0F] border border-white/5">
-            <p className="text-[10px] text-[#00FF88] uppercase tracking-wider mb-1">Recommended Action</p>
+            <p className="text-[10px] text-[#4ADE80] uppercase tracking-wider mb-1">Recommended Action</p>
             <p className="text-white text-xs leading-relaxed">{data.action}</p>
           </div>
         </motion.div>
@@ -152,11 +152,11 @@ export function UseCaseMockup({ type, color }: UseCaseMockupProps) {
               {isNegativeTrend ? (
                 <TrendingDown className="w-3 h-3 text-red-400" />
               ) : (
-                <TrendingUp className="w-3 h-3 text-[#00FF88]" />
+                <TrendingUp className="w-3 h-3 text-[#4ADE80]" />
               )}
               <span 
                 className="text-lg font-bold"
-                style={{ color: isNegativeTrend ? "#FF4D4D" : "#00FF88" }}
+                style={{ color: isNegativeTrend ? "#FF4D4D" : "#4ADE80" }}
               >
                 {data.metric.value}
               </span>
@@ -178,7 +178,7 @@ export function UseCaseMockup({ type, color }: UseCaseMockupProps) {
             <motion.div
               animate={{ x: [0, 4, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="flex items-center gap-1 text-[#00D4FF] text-xs cursor-pointer"
+              className="flex items-center gap-1 text-[#4ADE80] text-xs cursor-pointer"
             >
               <span>Dive deeper</span>
               <ArrowRight className="w-3 h-3" />

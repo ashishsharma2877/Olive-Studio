@@ -69,7 +69,7 @@ export function DataHubMockup() {
         <PreviewTooltip>
           <motion.button
             whileHover={{ scale: 1.05 }}
-            className="px-3 py-1.5 text-xs font-medium rounded-lg bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-[#0A0A0F]"
+            className="px-3 py-1.5 text-xs font-medium rounded-lg bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F]"
           >
             + New Connection
           </motion.button>
@@ -78,7 +78,7 @@ export function DataHubMockup() {
 
       {/* Tabs */}
       <div className="flex gap-4 mb-4 border-b border-white/10 pb-2">
-        <span className="text-[#00D4FF] text-xs font-medium border-b-2 border-[#00D4FF] pb-2">Connections</span>
+        <span className="text-[#4ADE80] text-xs font-medium border-b-2 border-[#4ADE80] pb-2">Connections</span>
         <span className="text-gray-500 text-xs">Domains</span>
       </div>
 
@@ -93,12 +93,12 @@ export function DataHubMockup() {
           <motion.div
             key={conn.name}
             variants={cardVariants}
-            className="p-3 rounded-lg bg-[#14141A] border border-white/10 hover:border-[#00D4FF]/30 transition-colors"
+            className="p-3 rounded-lg bg-[#14141A] border border-white/10 hover:border-[#4ADE80]/30 transition-colors"
           >
             <div className="flex items-start justify-between mb-2">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center">
-                  <Database className="w-4 h-4 text-[#00D4FF]" />
+                <div className="w-8 h-8 rounded-lg bg-[#4ADE80]/10 flex items-center justify-center">
+                  <Database className="w-4 h-4 text-[#4ADE80]" />
                 </div>
                 <div>
                   <p className="text-white text-xs font-medium">{conn.name}</p>
@@ -110,9 +110,9 @@ export function DataHubMockup() {
             <div className="flex items-center gap-1 mb-2">
               <motion.div
                 animate={pulseAnimation}
-                className="w-2 h-2 rounded-full bg-[#00FF88]"
+                className="w-2 h-2 rounded-full bg-[#4ADE80]"
               />
-              <span className="text-[#00FF88] text-[10px]">{conn.status}</span>
+              <span className="text-[#4ADE80] text-[10px]">{conn.status}</span>
             </div>
 
             <div className="space-y-1 text-[10px] text-gray-400">
@@ -133,7 +133,7 @@ export function DataHubMockup() {
         <span>3 active connections</span>
         <span>89 tables synced</span>
         <span className="flex items-center gap-1">
-          <CheckCircle className="w-3 h-3 text-[#00FF88]" />
+          <CheckCircle className="w-3 h-3 text-[#4ADE80]" />
           All systems healthy
         </span>
       </motion.div>

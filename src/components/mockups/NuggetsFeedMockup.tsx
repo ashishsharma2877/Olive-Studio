@@ -57,7 +57,7 @@ const getPriorityColor = (priority: string) => {
   switch (priority) {
     case "high": return "#FF4D4D";
     case "medium": return "#FFB800";
-    case "low": return "#00FF88";
+    case "low": return "#4ADE80";
     default: return "#6B7280";
   }
 };
@@ -76,9 +76,9 @@ export function NuggetsFeedMockup() {
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <Lightbulb className="w-4 h-4 text-[#00D4FF]" />
+          <Lightbulb className="w-4 h-4 text-[#4ADE80]" />
           <h3 className="text-white font-semibold text-sm">Insights</h3>
-          <span className="px-2 py-0.5 rounded-full bg-[#00D4FF]/20 text-[#00D4FF] text-[10px] font-medium">
+          <span className="px-2 py-0.5 rounded-full bg-[#4ADE80]/20 text-[#4ADE80] text-[10px] font-medium">
             3 new
           </span>
         </div>
@@ -94,7 +94,7 @@ export function NuggetsFeedMockup() {
             opacity: [1, 0.5, 1],
           }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className="text-[#00D4FF] text-xs"
+          className="text-[#4ADE80] text-xs"
         >
           ✨
         </motion.div>
@@ -132,7 +132,7 @@ export function NuggetsFeedMockup() {
                   <motion.span
                     animate={{ opacity: [1, 0.6, 1] }}
                     transition={{ duration: 2, repeat: Infinity }}
-                    className="w-1.5 h-1.5 rounded-full bg-[#00D4FF]"
+                    className="w-1.5 h-1.5 rounded-full bg-[#4ADE80]"
                   />
                 )}
               </div>
@@ -155,7 +155,7 @@ export function NuggetsFeedMockup() {
         className="absolute bottom-3 left-3 right-3 text-center"
       >
         <PreviewTooltip>
-          <span className="text-[#00D4FF] text-[10px] cursor-pointer hover:underline">
+          <span className="text-[#4ADE80] text-[10px] cursor-pointer hover:underline">
             View all insights →
           </span>
         </PreviewTooltip>

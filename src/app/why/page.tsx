@@ -8,27 +8,27 @@ const comparison = [
   {
     traditional: "Generic across industries",
     aiAnalytics: "Horizontal / any industry",
-    fanmint: "Built for live games",
+    olivestudio: "Built for live games",
   },
   {
     traditional: "Black-box AI",
     aiAnalytics: "General-purpose AI",
-    fanmint: "Gaming-specific intelligence",
+    olivestudio: "Gaming-specific intelligence",
   },
   {
     traditional: "Post-mortem insights",
     aiAnalytics: "Faster answers to queries",
-    fanmint: "Real-time detection",
+    olivestudio: "Real-time detection",
   },
   {
     traditional: "Dashboards you have to check",
     aiAnalytics: "Chat-based interface",
-    fanmint: "Decisions pushed to you",
+    olivestudio: "Decisions pushed to you",
   },
   {
     traditional: "You ask questions",
     aiAnalytics: "AI answers your questions",
-    fanmint: "It tells you where to look",
+    olivestudio: "It tells you where to look",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function WhyPage() {
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-30" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00D4FF]/10 rounded-full blur-[128px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#4ADE80]/10 rounded-full blur-[128px]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -49,18 +49,18 @@ export default function WhyPage() {
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white">
               Why{" "}
-              <span className="gradient-text">FanMint</span>
+              <span className="gradient-text">Olive Studio</span>
             </h1>
             <div className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto space-y-2">
               <p>Not another dashboard.</p>
               <p>Not another chatbot.</p>
-              <p className="text-white font-medium">We help you build what players love.</p>
+              <p className="text-white font-medium">Turn fan signals into revenue decisions.</p>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* What Makes FanMint Different - Combined Section */}
+      {/* What Makes Olive Studio Different - Combined Section */}
       <section className="py-20 md:py-32 bg-[#0d0d12]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Headline */}
@@ -72,7 +72,7 @@ export default function WhyPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              What Makes FanMint Different
+              What Makes Olive Studio Different
             </h2>
             <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
               Three things that set us apart.
@@ -88,7 +88,7 @@ export default function WhyPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="p-8 rounded-xl bg-[#14141A] border border-white/10"
             >
-              <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-lg bg-[#4ADE80]/10 flex items-center justify-center mb-6">
                 <span className="text-2xl">🎮</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">
@@ -107,7 +107,7 @@ export default function WhyPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="p-8 rounded-xl bg-[#14141A] border border-white/10"
             >
-              <div className="w-12 h-12 rounded-lg bg-[#00FF88]/10 flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-lg bg-[#4ADE80]/10 flex items-center justify-center mb-6">
                 <span className="text-2xl">⚡</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">
@@ -126,7 +126,7 @@ export default function WhyPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="p-8 rounded-xl bg-[#14141A] border border-white/10"
             >
-              <div className="w-12 h-12 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center mb-6">
                 <span className="text-2xl">🧠</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">
@@ -169,8 +169,8 @@ export default function WhyPage() {
                   <th className="py-4 px-6 text-left text-sm font-semibold text-gray-400 uppercase tracking-wider">
                     AI Analytics
                   </th>
-                  <th className="py-4 px-6 text-left text-sm font-semibold text-[#00D4FF] uppercase tracking-wider">
-                    FanMint
+                  <th className="py-4 px-6 text-left text-sm font-semibold text-[#4ADE80] uppercase tracking-wider">
+                    Olive Studio
                   </th>
                 </tr>
               </thead>
@@ -187,7 +187,7 @@ export default function WhyPage() {
                       {row.aiAnalytics}
                     </td>
                     <td className="py-4 px-6 text-white font-medium">
-                      {row.fanmint}
+                      {row.olivestudio}
                     </td>
                   </tr>
                 ))}
@@ -211,12 +211,12 @@ export default function WhyPage() {
               Ready to see the difference?
             </h2>
             <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
-              Let&apos;s talk about how FanMint can work for your team.
+              Let&apos;s talk about how Olive Studio can work for your team.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-gradient-to-r from-[#00D4FF] to-[#8B5CF6] text-[#0A0A0F] hover:opacity-90 transition-all hover:scale-105"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F] hover:opacity-90 transition-all hover:scale-105"
               >
                 Talk to Us
                 <ArrowRight className="ml-2 w-5 h-5" />
