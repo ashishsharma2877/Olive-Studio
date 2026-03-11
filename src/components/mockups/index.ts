@@ -5,3 +5,5 @@ export { UseCaseMockup } from "./UseCaseMockup";
 export { LearnMockup } from "./LearnMockup";
 export { PreviewTooltip } from "./PreviewTooltip";
 export { AppStudioMockup } from "./AppStudioMockup";
+export { PricingInsightMockup } from "./PricingInsightMockup";
+export { AnimatedInsightMockup } from "./AnimatedInsightMockup";

@@ -19,29 +19,37 @@ const useCases = [
     icon: DollarSign,
     title: "Offer & Pricing Optimization",
     description: "Your Monday offer slate is a guess. You find out it was wrong in the post-mortem.",
+    metric: "Avg +12% ARPU lift",
     href: "/use-cases#pricing",
     color: "from-[#4ADE80] to-[#4ADE80]",
+    metricColor: "#4ADE80",
   },
   {
     icon: TrendingUp,
     title: "Marketing ROAS & Funnel Intelligence",
     description: "You're spending millions on UA. You can't tell which dollars actually worked.",
+    metric: "Avg 2.1x ROAS improvement",
     href: "/use-cases#roas",
     color: "from-[#4ADE80] to-[#4ADE80]",
+    metricColor: "#4ADE80",
   },
   {
     icon: BarChart3,
     title: "Feature ROI & Engagement",
     description: "You shipped 12 features last quarter. Which ones moved the needle? You're guessing.",
+    metric: "Cut roadmap guesswork by 60%",
     href: "/use-cases#feature-roi",
     color: "from-[#00D4FF] to-[#00D4FF]",
+    metricColor: "#00D4FF",
   },
   {
     icon: Heart,
     title: "Player Sentiment & Health",
     description: "Your players are frustrated. You're finding out on Reddit, not in your data.",
+    metric: "Catch issues 2 weeks earlier",
     href: "/use-cases#sentiment",
     color: "from-[#F472B6] to-[#F472B6]",
+    metricColor: "#F472B6",
   },
 ];
 
@@ -115,22 +123,20 @@ export default function Home() {
               <span className="text-white">for Live Services</span>
             </h1>
             <p className="mt-6 md:mt-8 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Turn player behavior into revenue decisions — across marketing,
-              monetization, and engagement. Built by gaming AI veterans
-              who&apos;ve done this at scale.
+              You&apos;re guessing on pricing, reacting on churn, and finding out what worked in the post-mortem. We fix that.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/product"
+                href="#use-cases"
                 className="w-full sm:w-auto px-8 py-4 text-base font-semibold rounded-lg bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F] hover:opacity-90 transition-all hover:scale-105"
               >
-                See How It Works
+                Explore Use Cases
               </Link>
               <Link
                 href="/contact"
                 className="w-full sm:w-auto px-8 py-4 text-base font-semibold rounded-lg border border-white/20 text-white hover:bg-white/5 transition-all"
               >
-                Talk to Us
+                Book a Demo
               </Link>
             </div>
           </motion.div>
@@ -138,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* Use Cases Section */}
-      <section className="py-8 md:py-12 relative">
+      <section id="use-cases" className="py-8 md:py-12 relative scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 1 }}
@@ -193,6 +199,12 @@ export default function Home() {
                     {useCase.title}
                   </h3>
                   <p className="mt-2 text-gray-400">{useCase.description}</p>
+                  <div 
+                    className="mt-4 inline-flex items-center px-3 py-1.5 rounded-full text-sm font-semibold"
+                    style={{ backgroundColor: `${useCase.metricColor}15`, color: useCase.metricColor }}
+                  >
+                    {useCase.metric}
+                  </div>
                   <div className="mt-4 flex items-center text-[#4ADE80] text-sm font-medium">
                     Learn more
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

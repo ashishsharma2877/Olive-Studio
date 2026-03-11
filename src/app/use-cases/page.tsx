@@ -14,7 +14,7 @@ import {
   Zap,
   AlertCircle,
 } from "lucide-react";
-import { UseCaseMockup } from "@/components/mockups";
+import { AnimatedInsightMockup } from "@/components/mockups";
 
 const useCases = [
   {
@@ -235,9 +235,8 @@ export default function UseCasesPage() {
 
                   {/* Right: Interactive Mockup */}
                   <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                    <UseCaseMockup 
+                    <AnimatedInsightMockup 
                       type={useCase.id as "pricing" | "roas" | "feature-roi" | "sentiment"} 
-                      color={useCase.color} 
                     />
                   </div>
                 </div>
