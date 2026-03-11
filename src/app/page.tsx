@@ -122,8 +122,11 @@ export default function Home() {
               <br />
               <span className="text-white">for Live Services</span>
             </h1>
-            <p className="mt-6 md:mt-8 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              You&apos;re guessing on offer pricing, reacting on player churn, and finding out what worked in the post-mortem. We fix that.
+            <p className="mt-6 md:mt-8 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed text-center">
+              You&apos;re guessing on offer pricing.<br />
+              Reacting on player churn.<br />
+              Finding out what worked in the post-mortem.<br />
+              <span className="text-white font-medium">We fix that.</span>
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
