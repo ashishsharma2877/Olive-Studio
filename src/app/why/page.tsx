@@ -2,7 +2,53 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, X, Check, AlertTriangle, TrendingDown, Clock, BarChart3, Zap, Target, Eye, Bell } from "lucide-react";
+
+const weekToday = [
+  {
+    icon: AlertTriangle,
+    pain: "Monday: Last week's event underperformed. You find out now.",
+  },
+  {
+    icon: TrendingDown,
+    pain: "Tuesday: Whales are churning. Nobody flagged it.",
+  },
+  {
+    icon: Clock,
+    pain: "Wednesday: Pricing meeting. You bring a spreadsheet and a hunch.",
+  },
+  {
+    icon: BarChart3,
+    pain: "Thursday: Dashboard says revenue is down. No idea why.",
+  },
+  {
+    icon: X,
+    pain: "Friday: Post-mortem. Again. 'We'll do better next time.'",
+  },
+];
+
+const weekWithOlive = [
+  {
+    icon: Eye,
+    joy: "Monday: You already knew the event was soft — adjusted mid-flight.",
+  },
+  {
+    icon: Bell,
+    joy: "Tuesday: Olive flagged whale risk last week. You intervened.",
+  },
+  {
+    icon: Target,
+    joy: "Wednesday: Pricing signals in hand. You walk in with a plan.",
+  },
+  {
+    icon: Zap,
+    joy: "Thursday: Revenue dipped because of segment X. Olive told you why.",
+  },
+  {
+    icon: Check,
+    joy: "Friday: No post-mortem needed. You optimized in real-time.",
+  },
+];
 
 const comparison = [
   {
@@ -60,8 +106,104 @@ export default function WhyPage() {
         </div>
       </section>
 
+      {/* Your Week: Pain vs Joy */}
+      <section className="py-20 md:py-32 bg-[#0d0d12] relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#4ADE80]/5 to-transparent" />
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            {/* Your Week Today */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative"
+            >
+              <div className="absolute -inset-1 bg-gradient-to-r from-red-500/20 to-orange-500/20 rounded-2xl blur-xl" />
+              <div className="relative p-8 rounded-2xl bg-[#14141A] border border-red-500/20">
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center">
+                    <X className="w-5 h-5 text-red-400" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white">Every Studio Knows This Week</h3>
+                </div>
+                
+                <div className="space-y-4">
+                  {weekToday.map((item, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: index * 0.1 }}
+                      className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-red-500/30 transition-colors group"
+                    >
+                      <div className="w-8 h-8 rounded-lg bg-red-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-red-500/20 transition-colors">
+                        <item.icon className="w-4 h-4 text-red-400" />
+                      </div>
+                      <p className="text-gray-300 leading-relaxed">{item.pain}</p>
+                    </motion.div>
+                  ))}
+                </div>
+                
+                <div className="mt-8 pt-6 border-t border-white/10">
+                  <p className="text-gray-500 text-sm italic text-center">
+                    Rinse. Repeat. Leave money on the table.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Your Week with Olive */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#4ADE80]/20 to-[#00D4FF]/20 rounded-2xl blur-xl" />
+              <div className="relative p-8 rounded-2xl bg-[#14141A] border border-[#4ADE80]/20">
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="w-10 h-10 rounded-lg bg-[#4ADE80]/20 flex items-center justify-center">
+                    <Check className="w-5 h-5 text-[#4ADE80]" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white">Olive Studio Ends It</h3>
+                </div>
+                
+                <div className="space-y-4">
+                  {weekWithOlive.map((item, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: 20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: index * 0.1 + 0.2 }}
+                      className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-[#4ADE80]/30 transition-colors group"
+                    >
+                      <div className="w-8 h-8 rounded-lg bg-[#4ADE80]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#4ADE80]/20 transition-colors">
+                        <item.icon className="w-4 h-4 text-[#4ADE80]" />
+                      </div>
+                      <p className="text-gray-300 leading-relaxed">{item.joy}</p>
+                    </motion.div>
+                  ))}
+                </div>
+                
+                <div className="mt-8 pt-6 border-t border-white/10">
+                  <p className="text-[#4ADE80] text-sm font-medium text-center">
+                    Proactive. Informed. In control.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* What Makes Olive Studio Different - Combined Section */}
-      <section className="py-20 md:py-32 bg-[#0d0d12]">
+      <section className="py-20 md:py-32 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Headline */}
           <motion.div
@@ -190,6 +332,22 @@ export default function WhyPage() {
                 ))}
               </tbody>
             </table>
+          </motion.div>
+
+          {/* Tagline after table */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="mt-16 text-center"
+          >
+            <p className="text-xl text-gray-400">
+              From a <span className="text-white font-medium">5-person indie</span> to a <span className="text-white font-medium">5000-person HD title</span> —
+            </p>
+            <p className="text-xl text-white font-medium mt-2">
+              the pain is the same. The fix is Olive Studio.
+            </p>
           </motion.div>
         </div>
       </section>
