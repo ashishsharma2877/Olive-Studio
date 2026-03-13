@@ -8,27 +8,27 @@ const comparison = [
   {
     traditional: "Generic across industries",
     aiAnalytics: "Horizontal / any industry",
-    olivestudio: "Built for live games",
+    olivestudio: "Built for monetization & live ops",
   },
   {
     traditional: "Black-box AI",
     aiAnalytics: "General-purpose AI",
-    olivestudio: "Gaming-specific intelligence",
+    olivestudio: "Player behavior intelligence",
   },
   {
     traditional: "Post-mortem insights",
     aiAnalytics: "Faster answers to queries",
-    olivestudio: "Real-time detection",
+    olivestudio: "Monday insights, not Friday post-mortems",
   },
   {
     traditional: "Dashboards you have to check",
     aiAnalytics: "Chat-based interface",
-    olivestudio: "Decisions pushed to you",
+    olivestudio: "Offer & pricing signals pushed to you",
   },
   {
     traditional: "You ask questions",
     aiAnalytics: "AI answers your questions",
-    olivestudio: "It tells you where to look",
+    olivestudio: "Surfaces what's hurting conversion",
   },
 ];
 
@@ -89,14 +89,13 @@ export default function WhyPage() {
               className="p-8 rounded-xl bg-[#14141A] border border-white/10"
             >
               <div className="w-12 h-12 rounded-lg bg-[#4ADE80]/10 flex items-center justify-center mb-6">
-                <span className="text-2xl">🎮</span>
+                <span className="text-2xl">📅</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">
-                Gaming-Native
+                Built for Live Ops
               </h3>
               <p className="text-gray-400">
-                Built by game industry veterans. We understand live ops, player
-                behavior, and the metrics that actually matter.
+                Weekly offer cycles, seasonal events, real-time player behavior — we understand your cadence.
               </p>
             </motion.div>
 
@@ -108,14 +107,13 @@ export default function WhyPage() {
               className="p-8 rounded-xl bg-[#14141A] border border-white/10"
             >
               <div className="w-12 h-12 rounded-lg bg-[#4ADE80]/10 flex items-center justify-center mb-6">
-                <span className="text-2xl">⚡</span>
+                <span className="text-2xl">💰</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">
-                Finds You First
+                Speaks Your Language
               </h3>
               <p className="text-gray-400">
-                You don&apos;t hunt for insights. They come to you — before you
-                know to look.
+                ARPU, LTV, conversion, churn — the metrics on your P&L, not generic KPIs.
               </p>
             </motion.div>
 
@@ -127,14 +125,13 @@ export default function WhyPage() {
               className="p-8 rounded-xl bg-[#14141A] border border-white/10"
             >
               <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center mb-6">
-                <span className="text-2xl">🧠</span>
+                <span className="text-2xl">🎯</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">
-                Learns You
+                From Guessing to Knowing
               </h3>
               <p className="text-gray-400">
-                Your priorities, not just your data. The more you use it, the
-                smarter it gets.
+                Stop finding out what worked in the post-mortem. Know before you commit.
               </p>
             </motion.div>
           </div>

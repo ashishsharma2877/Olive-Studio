@@ -3,24 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Linkedin, ExternalLink } from "lucide-react";
-
-const founders = [
-  {
-    name: "Krish Ravikumar",
-    role: "CEO & Co-Founder",
-    bio: "Spent years as a senior executive in gaming, building and scaling platforms, leading large teams, and tackling complex monetization problems. Known for spotting patterns early and turning complexity into systems teams actually use.",
-    focus: "Product, vision & turning signals into decisions",
-    education: "Georgia State University · Mensa",
-  },
-  {
-    name: "Siddhartha Sharma",
-    role: "CTO & Co-Founder",
-    bio: "25+ years designing and scaling systems across gaming and enterprise. Deep expertise in architecture, AI systems, and player data infrastructure. The calm force behind the code.",
-    focus: "Architecture, AI systems & technical excellence",
-    education: "IIT Kanpur · University of Maryland · Stanford University",
-  },
-];
+import { ArrowRight, ExternalLink } from "lucide-react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -65,30 +48,31 @@ export default function AboutPage() {
       </section>
 
       {/* Part of Olive Labs */}
-      <section className="py-12 md:py-16 relative">
+      <section className="py-8 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto"
+            className="flex items-center justify-center gap-3"
           >
+            <Image
+              src="/images/logo-full-gaming.svg"
+              alt="Olive Studio"
+              width={200}
+              height={48}
+              className="h-12 w-auto"
+            />
+            <span className="text-gray-500 text-xl">·</span>
             <a 
               href="https://olivelabs.ai" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-white/5 border border-white/10 hover:border-white/20 transition-all group"
+              className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-lg md:text-xl"
             >
-              <Image
-                src="/olivelabs-icon.svg"
-                alt="Olive Labs"
-                width={24}
-                height={24}
-                className="w-6 h-6"
-              />
-              <span className="text-gray-300 group-hover:text-white transition-colors">From Olive Labs</span>
-              <ExternalLink className="w-4 h-4 text-gray-500 group-hover:text-white transition-colors" />
+              An Olive Labs product
+              <ExternalLink className="w-5 h-5" />
             </a>
           </motion.div>
         </div>
@@ -106,7 +90,7 @@ export default function AboutPage() {
           >
             <div className="relative p-8 md:p-12 rounded-2xl bg-[#14141A] border border-white/10">
               <div className="absolute -top-4 left-8 px-4 py-1 rounded-full bg-gradient-to-r from-[#4ADE80] to-[#00D4FF] text-[#0A0A0F] text-sm font-bold">
-                Our Story
+                Why We Built Olive Studio
               </div>
               <div className="mt-4 space-y-6 text-gray-300 leading-relaxed text-lg">
                 <p>
@@ -135,66 +119,41 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Founders */}
-      <section className="py-20 md:py-32 bg-[#0d0d12] relative">
+      {/* Meet the Founders CTA */}
+      <section className="py-16 md:py-24 bg-[#0d0d12] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="max-w-2xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Meet the Founders
-            </h2>
-            <p className="mt-4 text-gray-400 text-lg">
-              Decades of experience building player systems at scale.
-            </p>
-          </motion.div>
-
-          <motion.div
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8"
-          >
-            {founders.map((founder) => (
-              <motion.div
-                key={founder.name}
-                variants={fadeInUp}
-                className="p-8 rounded-xl bg-[#14141A] border border-white/10"
-              >
-                {/* Avatar Placeholder */}
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#4ADE80] to-[#00D4FF] flex items-center justify-center mb-6">
-                  <span className="text-3xl font-bold text-[#0A0A0F]">
-                    {founder.name
-                      .split(" ")
-                      .map((n) => n[0])
-                      .join("")}
-                  </span>
+            <a
+              href="https://olivelabs.ai/about"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-8 md:p-10 rounded-2xl bg-[#14141A] border border-white/10 hover:border-white/20 transition-all group text-center"
+            >
+              <div className="flex justify-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#4ADE80] to-[#00D4FF] flex items-center justify-center">
+                  <span className="text-xl font-bold text-[#0A0A0F]">KR</span>
                 </div>
-
-                <h3 className="text-2xl font-bold text-white">{founder.name}</h3>
-                <p className="text-[#4ADE80] font-medium mb-4">{founder.role}</p>
-
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  {founder.bio}
-                </p>
-
-                <div className="space-y-3 text-sm">
-                  <div>
-                    <span className="text-gray-500">Focus: </span>
-                    <span className="text-gray-300">{founder.focus}</span>
-                  </div>
-                  <div>
-                    <span className="text-gray-500">Education: </span>
-                    <span className="text-gray-300">{founder.education}</span>
-                  </div>
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#00D4FF] to-[#4ADE80] flex items-center justify-center">
+                  <span className="text-xl font-bold text-[#0A0A0F]">SS</span>
                 </div>
-              </motion.div>
-            ))}
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-white group-hover:text-[#4ADE80] transition-colors">
+                Meet the Founders
+              </h2>
+              <p className="mt-3 text-gray-400">
+                Decades of experience building player systems at scale.
+              </p>
+              <div className="mt-6 inline-flex items-center text-[#4ADE80] font-medium">
+                Learn more at Olive Labs
+                <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </a>
           </motion.div>
         </div>
       </section>
