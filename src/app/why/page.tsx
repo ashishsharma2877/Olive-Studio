@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, X, Check, AlertTriangle, TrendingDown, Clock, BarChart3, Zap, Target, Eye, Bell } from "lucide-react";
 
@@ -292,47 +293,75 @@ export default function WhyPage() {
           </motion.div>
 
           {/* Comparison Table */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="overflow-x-auto"
-          >
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="border-b border-white/10">
-                  <th className="py-4 px-6 text-left text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                    Traditional Analytics
-                  </th>
-                  <th className="py-4 px-6 text-left text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                    AI Analytics
-                  </th>
-                  <th className="py-4 px-6 text-left text-sm font-semibold text-[#4ADE80] uppercase tracking-wider">
-                    Olive Studio
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {comparison.map((row, index) => (
-                  <tr
-                    key={index}
-                    className="border-b border-white/5 hover:bg-white/5 transition-colors"
-                  >
-                    <td className="py-4 px-6 text-gray-400">
-                      {row.traditional}
-                    </td>
-                    <td className="py-4 px-6 text-gray-400">
-                      {row.aiAnalytics}
-                    </td>
-                    <td className="py-4 px-6 text-white font-medium">
-                      {row.olivestudio}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </motion.div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Left side: Traditional + AI Analytics (Red halo) */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative"
+            >
+              <div className="absolute -inset-1 bg-gradient-to-r from-red-500/20 to-orange-500/20 rounded-2xl blur-xl" />
+              <div className="relative p-6 rounded-2xl bg-[#14141A] border border-red-500/20">
+                <div className="grid grid-cols-2 gap-4 h-8 mb-6">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-red-500/20 flex items-center justify-center">
+                      <X className="w-4 h-4 text-red-400" />
+                    </div>
+                    <h4 className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Traditional</h4>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-orange-500/20 flex items-center justify-center">
+                      <AlertTriangle className="w-4 h-4 text-orange-400" />
+                    </div>
+                    <h4 className="text-xs font-semibold text-gray-400 uppercase tracking-wider">AI Analytics</h4>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  {comparison.map((row, index) => (
+                    <div key={index} className="grid grid-cols-2 gap-4">
+                      <div className="p-3 rounded-lg bg-white/5 border border-white/5">
+                        <p className="text-gray-400 text-sm">{row.traditional}</p>
+                      </div>
+                      <div className="p-3 rounded-lg bg-white/5 border border-white/5">
+                        <p className="text-gray-400 text-sm">{row.aiAnalytics}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Right side: Olive Studio (Green halo) */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#4ADE80]/20 to-[#00D4FF]/20 rounded-2xl blur-xl" />
+              <div className="relative p-6 rounded-2xl bg-[#14141A] border border-[#4ADE80]/20">
+                <div className="flex items-center gap-2 h-8 mb-6">
+                  <Image
+                    src="/images/logo-full-gaming.svg"
+                    alt="Olive Studio"
+                    width={160}
+                    height={32}
+                    className="h-8 w-auto"
+                  />
+                </div>
+                <div className="space-y-3">
+                  {comparison.map((row, index) => (
+                    <div key={index} className="p-3 rounded-lg bg-white/5 border border-[#4ADE80]/10 hover:border-[#4ADE80]/30 transition-colors">
+                      <p className="text-white font-medium text-sm">{row.olivestudio}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </div>
 
           {/* Tagline after table */}
           <motion.div
