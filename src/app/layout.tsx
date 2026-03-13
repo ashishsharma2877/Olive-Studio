@@ -14,8 +14,12 @@ export const metadata: Metadata = {
   description:
     "Turn player behavior into revenue decisions — across monetization, marketing, product, and engagement. Built by live ops veterans who've done this at scale.",
   icons: {
-    icon: "/icon-32.png",
-    apple: "/icon-32.png",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/favicon.png",
   },
   keywords: [
     "player intelligence",
