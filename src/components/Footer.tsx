@@ -21,11 +21,11 @@ export default function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/logo-full.png"
+                src="/images/logo-full-gaming.svg"
                 alt="Olive Studio"
-                width={160}
-                height={36}
-                className="h-8 w-auto"
+                width={200}
+                height={48}
+                className="h-12 w-auto"
               />
             </Link>
             <p className="mt-4 text-gray-400 text-sm max-w-md">
@@ -74,10 +74,25 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-white/10">
-          <p className="text-gray-500 text-sm text-center">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} Olive Studio. All rights reserved.
           </p>
+          <a 
+            href="https://olivelabs.ai" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
+          >
+            <Image
+              src="/olivelabs-icon.svg"
+              alt="Olive Labs"
+              width={20}
+              height={20}
+              className="w-5 h-5"
+            />
+            <span>From Olive Labs</span>
+          </a>
         </div>
       </div>
     </footer>

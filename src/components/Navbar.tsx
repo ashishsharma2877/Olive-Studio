@@ -20,17 +20,34 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A0A0F]/80 backdrop-blur-xl border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/images/logo-full.svg"
-              alt="Olive Studio"
-              width={200}
-              height={50}
-              className="w-40 md:w-48"
-              priority
-            />
-          </Link>
+          {/* Olive Labs Icon + Logo */}
+          <div className="flex items-center gap-3">
+            <a 
+              href="https://olivelabs.ai" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hidden sm:flex items-center justify-center w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 transition-colors"
+              title="Olive Labs"
+            >
+              <Image
+                src="/olivelabs-icon.svg"
+                alt="Olive Labs"
+                width={20}
+                height={20}
+                className="w-5 h-5"
+              />
+            </a>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/logo-full-gaming.svg"
+                alt="Olive Studio"
+                width={200}
+                height={50}
+                className="w-40 md:w-48"
+                priority
+              />
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

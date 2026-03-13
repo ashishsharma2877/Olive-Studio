@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- OliveStudio Icon: Gaming Controller with Olive colors -->
+  <defs>
+    <!-- Ring gradient (nod to parent Olive Labs) -->
+    <radialGradient id="ringGrad" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#136B64"/>
+      <stop offset="70%" stop-color="#115E59"/>
+      <stop offset="100%" stop-color="#0E4E49"/>
+    </radialGradient>
+    
+    <!-- Inner dark gradient -->
+    <radialGradient id="innerGrad" cx="45%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#0F3E3A"/>
+      <stop offset="55%" stop-color="#0B2F2C"/>
+      <stop offset="100%" stop-color="#061B19"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer ring (same as Olive Labs - the visual thread) -->
+  <circle cx="300" cy="300" r="250" fill="url(#ringGrad)"/>
+  
+  <!-- Inner disk -->
+  <circle cx="300" cy="300" r="190" fill="url(#innerGrad)"/>
+
+  <!-- Stylized Game Controller -->
+  <g stroke="#4ADE80" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Controller body outline -->
+    <path d="M180 280 
+             C180 240, 220 200, 300 200 
+             C380 200, 420 240, 420 280
+             C420 320, 400 380, 360 400
+             C340 410, 320 400, 300 380
+             C280 400, 260 410, 240 400
+             C200 380, 180 320, 180 280Z" />
+    
+    <!-- Left D-pad vertical -->
+    <line x1="230" y1="260" x2="230" y2="320" />
+    <!-- Left D-pad horizontal -->
+    <line x1="200" y1="290" x2="260" y2="290" />
+    
+    <!-- Right buttons (A/B style) -->
+    <circle cx="370" cy="270" r="12" fill="#4ADE80" />
+    <circle cx="370" cy="310" r="12" fill="#4ADE80" />
+  </g>
+
+  <!-- Center accent node (nod to Olive branch nodes) -->
+  <g transform="translate(300, 290)">
+    <circle r="16" fill="#4ADE80"/>
+    <circle r="7" fill="#D8FFE9"/>
+  </g>
+
+  <!-- Small accent nodes on controller grips -->
+  <g>
+    <g transform="translate(220, 370)">
+      <circle r="8" fill="#4ADE80"/>
+      <circle r="3.5" fill="#D8FFE9"/>
+    </g>
+    <g transform="translate(380, 370)">
+      <circle r="8" fill="#4ADE80"/>
+      <circle r="3.5" fill="#D8FFE9"/>
+    </g>
+  </g>
+</svg>

@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Linkedin } from "lucide-react";
+import { ArrowRight, Linkedin, ExternalLink } from "lucide-react";
 
 const founders = [
   {
@@ -59,6 +60,36 @@ export default function AboutPage() {
               decades in the gaming industry. We got tired of flying blind — so we
               built the system we always wished we had.
             </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Part of Olive Labs */}
+      <section className="py-12 md:py-16 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-4xl mx-auto"
+          >
+            <a 
+              href="https://olivelabs.ai" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-white/5 border border-white/10 hover:border-white/20 transition-all group"
+            >
+              <Image
+                src="/olivelabs-icon.svg"
+                alt="Olive Labs"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+              />
+              <span className="text-gray-300 group-hover:text-white transition-colors">From Olive Labs</span>
+              <ExternalLink className="w-4 h-4 text-gray-500 group-hover:text-white transition-colors" />
+            </a>
           </motion.div>
         </div>
       </section>

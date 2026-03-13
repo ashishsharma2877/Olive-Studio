@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- ========= ICON ONLY ========= -->
+  <defs>
+    <!-- subtle inner depth -->
+    <radialGradient id="innerShade" cx="45%" cy="45%" r="70%">
+      <stop offset="0%"  stop-color="#0F3E3A"/>
+      <stop offset="55%" stop-color="#0B2F2C"/>
+      <stop offset="100%" stop-color="#061B19"/>
+    </radialGradient>
+
+    <!-- ring shading -->
+    <radialGradient id="ringShade" cx="35%" cy="30%" r="80%">
+      <stop offset="0%"  stop-color="#136B64"/>
+      <stop offset="70%" stop-color="#115E59"/>
+      <stop offset="100%" stop-color="#0E4E49"/>
+    </radialGradient>
+  </defs>
+
+  <g transform="translate(50,100)">
+
+    <!-- Outer ring -->
+    <circle cx="250" cy="200" r="200" fill="url(#ringShade)"/>
+
+    <!-- Inner disk -->
+    <circle cx="250" cy="200" r="150" fill="url(#innerShade)"/>
+
+    <!-- Circuit branch -->
+    <g stroke="#4ADE80" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M130 320
+               C170 285, 205 250, 235 220
+               C270 185, 305 150, 345 115
+               C365 98, 385 85, 410 72" />
+
+      <path d="M205 255
+               C190 235, 185 215, 190 195" />
+
+      <path d="M245 215
+               C265 190, 290 170, 320 155" />
+
+      <path d="M290 165
+               C310 140, 335 120, 365 105" />
+
+      <path d="M165 300 L300 300" />
+      <path d="M190 260 L340 260" />
+      <path d="M215 220 L375 220" />
+      <path d="M245 180 L395 180" />
+      <path d="M275 140 L410 140" />
+      <path d="M310 110 L425 110" />
+    </g>
+
+    <!-- Nodes -->
+    <g>
+      <g transform="translate(165,300)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+
+      <g transform="translate(240,300)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+
+      <g transform="translate(225,260)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+
+      <g transform="translate(310,260)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+
+      <g transform="translate(295,220)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+
+      <g transform="translate(365,220)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+
+      <g transform="translate(330,180)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+
+      <g transform="translate(395,180)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+
+      <g transform="translate(350,140)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+
+      <g transform="translate(410,140)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+
+      <g transform="translate(370,110)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+
+      <g transform="translate(425,110)">
+        <circle r="10" fill="#4ADE80"/>
+        <circle r="4.5" fill="#D8FFE9"/>
+      </g>
+    </g>
+
+  </g>
+
+</svg>
