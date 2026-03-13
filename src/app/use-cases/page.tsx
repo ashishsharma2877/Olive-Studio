@@ -231,6 +231,19 @@ export default function UseCasesPage() {
                         ))}
                       </div>
                     </div>
+
+                    {/* Learn More Link - only for pricing */}
+                    {useCase.id === "pricing" && (
+                      <div className="mt-8">
+                        <Link
+                          href="/use-cases/pricing"
+                          className="inline-flex items-center text-[#4ADE80] font-medium hover:underline"
+                        >
+                          See how it works in detail
+                          <ArrowRight className="ml-2 w-4 h-4" />
+                        </Link>
+                      </div>
+                    )}
                   </div>
 
                   {/* Right: Interactive Mockup */}
