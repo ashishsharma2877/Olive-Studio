@@ -76,7 +76,7 @@ export default function InvestorsPage() {
                 before they commit. The most painful, highest-ROI decision studios make weekly.
               </p>
               <div className="mt-6 inline-flex items-center text-[#4ADE80] font-medium">
-                See how it works
+                See a week in action
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
