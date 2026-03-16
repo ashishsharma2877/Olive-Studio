@@ -115,41 +115,60 @@ export default function InvestorsPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              The Wedge
+              Start Here. Then Expand.
             </h2>
-            <p className="mt-4 text-gray-400 text-lg">
-              Start narrow. Expand everywhere.
-            </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative max-w-3xl mx-auto"
-          >
-            <div className="absolute -inset-1 bg-gradient-to-r from-[#4ADE80]/20 to-[#00D4FF]/20 rounded-2xl blur-xl" />
-            <Link 
-              href="/use-cases/pricing"
-              className="relative block p-8 md:p-12 rounded-2xl bg-[#14141A] border border-[#4ADE80]/20 text-center hover:border-[#4ADE80]/40 transition-all group"
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="relative"
             >
-              <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#4ADE80] to-[#00D4FF] flex items-center justify-center">
-                <Target className="w-8 h-8 text-[#0A0A0F]" />
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#4ADE80]/20 to-[#00D4FF]/20 rounded-2xl blur-xl" />
+              <Link
+                href="/use-cases/pricing"
+                className="relative block h-full p-8 md:p-12 rounded-2xl bg-[#14141A] border border-[#4ADE80]/20 text-center hover:border-[#4ADE80]/40 transition-all group"
+              >
+                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#4ADE80] to-[#00D4FF] flex items-center justify-center">
+                  <Target className="w-8 h-8 text-[#0A0A0F]" />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#4ADE80] transition-colors">
+                  Offer & Pricing Optimization
+                </h3>
+                <p className="text-gray-400 text-lg max-w-xl mx-auto">
+                  Help monetization teams know what to price, when to offer, and who to target — before they commit. The most painful, highest-ROI decision studios make weekly.
+                </p>
+                <div className="mt-6 inline-flex items-center text-[#4ADE80] font-medium">
+                  See a week in action
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#00D4FF]/20 to-[#4ADE80]/20 rounded-2xl blur-xl" />
+              <div className="relative h-full p-8 md:p-12 rounded-2xl bg-[#14141A] border border-[#4ADE80]/20 text-center">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#00D4FF] to-[#4ADE80] flex items-center justify-center">
+                  <Users className="w-8 h-8 text-[#0A0A0F]" />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                  Player Friction & Churn
+                </h3>
+                <p className="text-gray-400 text-lg max-w-xl mx-auto">
+                  Olive continuously scans gameplay, support, community, and monetization signals to surface early warnings on frustration, drop-off, and churn — before they show up in retention curves. LiveOps teams get proactive Nuggets they can act on in hours, not weeks.
+                </p>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#4ADE80] transition-colors">
-                Offer & Pricing Optimization
-              </h3>
-              <p className="text-gray-400 text-lg max-w-xl mx-auto">
-                Help monetization teams know what to price, when to offer, and who to target — 
-                before they commit. The most painful, highest-ROI decision studios make weekly.
-              </p>
-              <div className="mt-6 inline-flex items-center text-[#4ADE80] font-medium">
-                See a week in action
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -428,7 +447,7 @@ export default function InvestorsPage() {
               <li>• Large global gaming company as active customer</li>
               <li>• Multiple gaming studio conversations underway</li>
               <li>• Developed through enterprise pilots</li>
-              <li>• $100K contracted revenue</li>
+              <li>• $100K contracted Q1 revenue</li>
               <li>• $1M projected 2026 revenue (conservative)</li>
             </ul>
           </motion.div>
@@ -454,7 +473,7 @@ export default function InvestorsPage() {
                   <div className="w-1/2 pl-8">
                     <div className="p-4 rounded-xl bg-[#14141A] border border-[#4ADE80]/20">
                       <div className="text-2xl font-bold text-[#4ADE80]">$100K</div>
-                      <div className="text-gray-400 text-sm">Contracted ARR</div>
+                      <div className="text-gray-400 text-sm">Contracted Q1 revenue</div>
                       <div className="text-gray-500 text-xs mt-1">Pilot programs active</div>
                     </div>
                   </div>
